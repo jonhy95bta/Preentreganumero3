@@ -5,6 +5,7 @@
 /*Utilities*/
 
 @import "./utilities/variables";
+@import "./utilities/mixin.scss";
 
 /*Base*/
 
@@ -24,3 +25,24 @@
 /* Components*/
 
 @import "./components/bootstrap";
+
+
+
+/*Media queary*/
+@import "./layout/media/media-fs-1024_1300";
+@import "./layout/media/media-fs-1024";
+@import "./layout/media/media-fs-830_960";
+@import "./layout/media/media-fs-769_830";
+@import "./layout/media/media-fs-768";
+@import "./layout/media/media-fs-426_725";
+@import "./layout/media/media-fs-425";
+@import "./layout/media/media-fs-320";
+@import "./layout/media/media-pf-1024_1440";
+@import "./layout/media/media-pf-1024";
+@import "./layout/media/media-pf-962_1000";
+@import "./layout/media/media-pf-831_961";
+@import "./layout/media/media-pf-720_830";
+@import "./layout/media/media-pf-720";
+@import "./layout/media/media-pf-426_720";
+@import "./layout/media/media-pf-420";
+@import "./layout/media/media-pf-320";

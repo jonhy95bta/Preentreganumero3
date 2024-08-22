@@ -1,13 +1,10 @@
 body {
-    background-color: #750904
+    background-color: $color-main;
 }
 
 .navSecond ul {
-    
-    background-color: #E57A7A;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex (none, wrap,space-evenly,none,none);
+    background-color: $color-nav;
     list-style: none;
     font-weight: bold;
     font-size: 1.25rem;
@@ -17,15 +14,14 @@ body {
             text-decoration: none;
             color: white;
             &:hover {
-                background-color: #750904;
+                background-color: $color-main;
             }
         }
         }
 }
 .vistaPrevia {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex (none, wrap,space-evenly,none,none);
+
     height: 12.5rem;
 
     div {
@@ -36,12 +32,9 @@ body {
 }
 
 .introduccion {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex (none, wrap,center,center,none); 
     width: 100%;
     height: 5rem;
-    align-items: center;
-    justify-content: center;
     background-color:black ;
 
     p {
@@ -55,18 +48,17 @@ body {
 }
 
 .biografia{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex (none, wrap,space-evenly,none,none);
+
 
 
 div  {
+
+    @include flex (none, none,center,center,none);
     width: 18.75rem;
     height: 300px; ;
     margin: .3125rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
         p {
             font-size: small;

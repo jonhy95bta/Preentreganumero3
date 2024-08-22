@@ -7,46 +7,38 @@
     /* main */
 
     .grid .ache2 {
-        grid-column-start: 2;
-        grid-column-end: 3;
+        @include gridArea (2,3,1,1);
+
 
     
     }
     .grid{
-
-        display: grid;
+        @include grid (9.375rem 1fr 1fr 1fr,repeat(3,1fr));
         width: 100%;
         height: auto;
-        grid-template-rows: repeat(3,1fr);
         
     }
 
     .grid .imguno {
+        @include gridArea (3,5,2,3);
 
-        grid-column-start: 3;
-        grid-column-end: 5;
         padding-left: 0;
         order: 3;
         justify-self: center;
     }
     
     .grid .imgdos {
-
+        @include gridArea (1,3,3,4);
         padding-left: 0rem;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
+
         padding-left: 0rem;
         order: 1;
         justify-self: center;
     }
     
     .grid .imgtres {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        @include gridArea (3,5,3,4);
+
         padding-left: 0rem;
         padding-bottom: 0rem ;
         order: 2;

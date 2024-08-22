@@ -6,9 +6,8 @@
 
         
         .grid .ache2 {
-                grid-column-start: 2;
-                grid-column-end: 3;
-        
+            @include gridArea (2,3,1,1);
+
 
         }
         .grid .imguno2 {

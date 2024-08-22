@@ -1,17 +1,17 @@
  /* main */
 @media (max-width:725px) {
+
+
 .grid .ache2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    @include gridArea (1,3,1,1);
+
     padding-top: 9.375rem;
     justify-self: center;
     font-size:larger;
 }
 .grid .parrafito2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    @include gridArea (1,3,2,4);
+
     justify-self: center;
 }
 .grid .imguno2 {
@@ -22,10 +22,9 @@
 }
 
 .grid .imgdos2 {
-
+    @include gridArea (3,5,3,4);
     padding-left: 17.5rem;
-    grid-column-start: 3;
-    grid-column-end: 5;
+
     padding-left: 4.375rem;
     order: 1;
 }

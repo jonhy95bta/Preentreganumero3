@@ -15,12 +15,10 @@
         }
     
         .NavFirst ul {
-    
-            display: flex;
-            flex-wrap: wrap;
+            @include flex (none, wrap,center,none,none);
+
             padding-right: 0px;
             padding-top: 20px;
-            justify-content: center;
             font-weight: bold;
             font-size: 1.25rem;
             list-style: none;
@@ -34,10 +32,9 @@
     
         .navSecond ul {
     
-        background-color: #E57A7A;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        background-color: $color-nav;
+        @include flex (column, wrap,none,none,none);
+
         font-size: .9375rem;
         padding: 1rem 0rem 1rem 0rem;
     }

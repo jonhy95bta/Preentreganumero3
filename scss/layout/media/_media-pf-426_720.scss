@@ -4,10 +4,8 @@
 
 
     .grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.25rem;
+        @include flex (column, none,none,center,1.25rem);
+
         height: auto;
     }
     .grid .ache2 {

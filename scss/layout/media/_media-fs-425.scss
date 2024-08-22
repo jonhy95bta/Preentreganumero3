@@ -8,13 +8,11 @@
     /* Header */
     
     .NavFirst ul {
+        @include flex (column, none,none,none,.625rem);
     
-    
-        display: flex;
-        flex-direction: column;
         padding-right: 0px;
-        padding-top: 10px;
         font-size: .9375rem;
+
     
     }
     .NavFirst ul li {
@@ -26,10 +24,7 @@
     
     
         .grid {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.25rem;
+            @include flex (column, none ,none,center,1.25rem);
             height: auto;
         }
         .grid .ache2 {
