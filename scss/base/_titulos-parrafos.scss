@@ -1,0 +1,18 @@
+
+
+.degrade{
+    background-image: linear-gradient($color-degradado);
+    }
+h1 {
+    font-family: $fuente-h1; 
+    text-shadow: 5px 5px 10px gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px
+}
+p{
+    font-family: $fuente-p;
+    font-weight: 400;
+    color: $color-p-main;
+    text-align: justify;
+}

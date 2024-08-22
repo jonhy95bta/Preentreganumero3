@@ -1,0 +1,46 @@
+@media (min-width:426px) and (max-width:725px) {
+
+    /* Main */
+
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        height: auto;
+    }
+    .grid .ache2 {
+        padding-top: 1.25rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .grid .parrafito2 {
+    padding-left: 0rem;
+    padding-top: 20px;
+    
+
+    }
+    .grid .imguno2 {
+
+        padding-left: 0;
+        order: 3;
+    
+    }
+    
+    .grid .imgdos2 {
+
+        padding-left: 0rem;
+        align-self:center ;
+        order: 1;
+    }
+    
+    .grid .imgtres2 {
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+        order: 2;
+        align-self:center ;
+}
+
+
+}

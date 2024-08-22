@@ -1,0 +1,26 @@
+footer {
+    background-color: $color-foter;
+    p {
+        color: $color-p-foter;
+    }
+}
+
+.pieDepagina{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+        div {
+    width: 21.875rem;
+    padding: .625rem;
+            }
+}
+
+.img1 {
+    display: flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    justify-content: right;
+    margin-right: .625rem;
+} 

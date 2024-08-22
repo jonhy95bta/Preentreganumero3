@@ -1,0 +1,70 @@
+/* Pantallas de 320 px */
+
+/* Page FreeStyle */
+
+
+@media (max-width:374px) {
+
+    /* Header */
+    
+    h1 {
+    
+    
+        margin-top: 80px;
+        font-size: x-large;
+        }
+    
+        .NavFirst ul {
+    
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 0px;
+            padding-top: 20px;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.25rem;
+            list-style: none;
+                    }
+        .NavFirst ul li {
+            text-align: center;
+                    }
+    
+          /* Main */
+      /* Barra nav secundaria de pages */
+    
+        .navSecond ul {
+    
+        background-color: #E57A7A;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: .9375rem;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+        .navSecond ul li {
+    
+    text-align: center;
+    
+            }  
+    
+            /* Footer */
+    
+        .pieDepagina{
+        
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+    
+            }
+            .pieDepagina div {
+                width: 100%;
+                padding: .625rem;
+            }
+    
+            .pieDepagina div p {
+    
+                font-size: small;
+            }
+    
+    }
+    

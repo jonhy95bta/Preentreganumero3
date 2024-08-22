@@ -1,0 +1,34 @@
+ /* Pantallas de 962px a 1000px */
+    /* Page PowerFree */
+    @media (min-width:962px) and (max-width:1000px) {
+
+        /* main */
+
+        
+        .grid .ache2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+        
+
+        }
+        .grid .imguno2 {
+    
+            padding-left: 1.25rem;
+            order: 3;
+        
+        }
+        
+        .grid .imgdos2 {
+    
+            padding-left: 6.25rem;
+            order: 1;
+        }
+        
+        .grid .imgtres2 {
+        
+    
+            padding-left: 6.25rem;
+            order: 2;
+        }
+        
+    }

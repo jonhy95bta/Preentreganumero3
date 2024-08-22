@@ -1,0 +1,44 @@
+/* Css para bootstrap */
+
+.bs-body{
+    background-image:url(./assets/img/parque_calistenia.png)
+}
+.imgnav{
+    width: 50px;
+    height: 50px;
+}
+.NavPrincipal {
+    font-weight: bold;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #a3231c ;
+    
+}
+
+.imgcarrusel{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.bs-main{
+    background-image: linear-gradient(to right,#f0716a, #750904);
+
+    padding-top: 30px;
+    padding-bottom: 6.25rem;
+}
+.bs-header {
+    background-color: #E57A7A;
+    padding: 10px 10px;
+}
+.subTitulo{
+    font-size: xx-large; 
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(163, 144, 144);
+    padding: 2.5rem 2.5rem;
+}
+
+.parrafocard{
+    color: rgb(70, 74, 77); 
+}

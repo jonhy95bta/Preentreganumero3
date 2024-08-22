@@ -1,0 +1,39 @@
+/* Pantallas de 1024px */
+
+@media (max-width:1024px) {
+
+
+
+
+    /* Main */
+
+    .grid .ache2 {
+
+        justify-self: left;
+    
+    }
+    .grid .parrafito {
+        
+        justify-self: left;
+    }
+    .grid .imguno {
+
+        padding-left: 0;
+        order: 3;
+    
+    }
+    
+    .grid .imgdos {
+
+        padding-left: 15.625rem;
+        order: 1;
+    }
+    
+    .grid .imgtres {
+    
+
+        padding-left: 15.625rem;
+        order: 2;
+    }
+
+}

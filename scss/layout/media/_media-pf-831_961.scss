@@ -1,0 +1,44 @@
+ /* Pantallas de 831px a 961px */
+    /* Page PowerFree */
+
+    @media (min-width:831px) and (max-width:961px) {
+
+        /* main */
+
+        .grid .ache2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+
+    }
+    .grid .parrafito2 {
+        padding-top: 0rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        justify-self: center;
+    }
+        
+
+        .grid .imguno2 {
+    
+            padding-left: 1.25rem;
+            order: 3;
+        
+        }
+        
+        .grid .imgdos2 {
+    
+            padding-left: 6.25rem;
+            order: 2;
+        }
+        
+        .grid .imgtres2 {
+        
+    
+            padding-left: 6.25rem;
+            order: 2;
+        }
+        
+    }
