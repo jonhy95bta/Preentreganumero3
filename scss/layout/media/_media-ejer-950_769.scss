@@ -1,0 +1,35 @@
+
+
+
+@media (min-width:769px) and (max-width:950px) {
+
+
+    .galeria {
+        @include flex (column,wrap,center,center,3.125rem);
+
+        padding-top: 20px;
+        padding-bottom: 30px;
+    
+        p {
+    
+            width: 42.5rem ;
+        }
+        h3 {
+            color: white;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+    
+        div { width: 43.75rem;
+        
+        
+        img {
+            padding-top: 10px;
+            height: 12.5rem;
+            width: 18.75rem;
+            object-fit: cover;
+            }
+            }
+    }
+
+}

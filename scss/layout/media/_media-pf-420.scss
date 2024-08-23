@@ -9,11 +9,10 @@
     
     .NavFirst ul {
     
-    
-        display: flex;
-        flex-direction: column;
+        @include flex (column, none,none,none,none);
+
         padding-right: 0px;
-        padding-top: 10px;
+        padding-top: 30px;
         font-size: .9375rem;
     
     }

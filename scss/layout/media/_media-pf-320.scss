@@ -15,7 +15,7 @@
         }
     
         .NavFirst ul {
-            @include flex (none, wrap,center,none,none);
+            @include flex (column, wrap,center,center,none);
 
             padding-right: 0px;
             padding-top: 20px;
@@ -33,7 +33,7 @@
         .navSecond ul {
     
         background-color: $color-nav;
-        @include flex (column, wrap,none,none,none);
+        @include flex (column, wrap,center,center,none);
 
         font-size: .9375rem;
         padding: 1rem 0rem 1rem 0rem;
@@ -47,11 +47,8 @@
             /* Footer */
     
         .pieDepagina{
-        
-                display: flex;
-                justify-content: center;
-                flex-wrap: nowrap;
-    
+            @include flex (none, nowrap,center,none,none);
+
             }
             .pieDepagina div {
                 width: 100%;

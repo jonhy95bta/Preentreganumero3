@@ -30,6 +30,75 @@ p {
   text-align: justify;
 }
 
+.introduccion {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.introduccion div {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  margin-top: 1.25rem;
+  width: 50rem;
+  background-color: black;
+  border-radius: 80px;
+}
+.introduccion div:hover {
+  transform: scale(1.1);
+  background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
+  transition: all 1500ms cubic-bezier(0.19, 0.57, 0.66, 0.8);
+}
+.introduccion div p {
+  text-align: center;
+  width: 43.75rem;
+  height: 5rem;
+  text-indent: 0.625rem;
+}
+
+.navSecond {
+  width: auto;
+}
+.navSecond ul {
+  width: 100%;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: none;
+  gap: none;
+  background-color: #E57A7A;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1.75rem 1.875rem 1.75rem 3.125rem;
+}
+.navSecond ul li {
+  width: 9.375rem;
+  text-align: center;
+}
+.navSecond ul li:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(5px 5px 20px #750904);
+  background-color: #750904;
+  border-radius: 40%;
+  transition: all 1500ms cubic-bezier(0.19, 0.57, 0.66, 0.8);
+}
+.navSecond ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 /*Layout*/
 header {
   background-image: url(../assets/img/Head.png);
@@ -40,6 +109,9 @@ header {
   height: 18.75rem;
 }
 
+.NavFirst {
+  width: auto;
+}
 .NavFirst ul {
   display: flex;
   flex-wrap: wrap;
@@ -62,27 +134,6 @@ body {
   background-color: #750904;
 }
 
-.navSecond ul {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: none;
-  gap: none;
-  background-color: #E57A7A;
-  list-style: none;
-  font-weight: bold;
-  font-size: 1.25rem;
-  padding: 1.75rem 1.875rem 1.75rem 3.125rem;
-}
-.navSecond ul li a {
-  text-decoration: none;
-  color: white;
-}
-.navSecond ul li a:hover {
-  background-color: #750904;
-}
-
 .vistaPrevia {
   display: flex;
   flex-direction: none;
@@ -95,24 +146,6 @@ body {
 .vistaPrevia div {
   margin: 0.625rem;
   height: 100%;
-}
-
-.introduccion {
-  display: flex;
-  flex-direction: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  width: 100%;
-  height: 5rem;
-  background-color: black;
-}
-.introduccion p {
-  padding-top: 10px;
-  width: 43.75rem;
-  height: 5rem;
-  text-indent: 0.625rem;
 }
 
 .biografia {
@@ -162,22 +195,6 @@ body {
   height: 37.5rem;
   background-color: #E57A7A;
   border-color: #E57A7A;
-}
-
-.introduccion {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 5rem;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-.introduccion p {
-  padding-top: 10px;
-  width: 43.75rem;
-  height: 5rem;
-  text-indent: 0.625rem;
 }
 
 .galeria {
@@ -910,6 +927,22 @@ footer p {
     align-self: center;
   }
 }
+@media (min-width: 380px) and (max-width: 529px) {
+  .navSecond ul {
+    background-color: #E57A7A;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    font-size: 0.9375rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .navSecond ul li {
+    text-align: center;
+  }
+}
 /* Pantallas de 425 px */
 /* Page PowerFree */
 @media (max-width: 425px) {
@@ -917,8 +950,12 @@ footer p {
   .NavFirst ul {
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: none;
+    gap: none;
     padding-right: 0px;
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 0.9375rem;
   }
   .NavFirst ul li {
@@ -967,10 +1004,10 @@ footer p {
   }
   .NavFirst ul {
     display: flex;
-    flex-direction: none;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: none;
+    align-items: center;
     gap: none;
     padding-right: 0px;
     padding-top: 20px;
@@ -988,8 +1025,8 @@ footer p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: none;
-    align-items: none;
+    justify-content: center;
+    align-items: center;
     gap: none;
     font-size: 0.9375rem;
     padding: 1rem 0rem 1rem 0rem;
@@ -1000,8 +1037,11 @@ footer p {
   /* Footer */
   .pieDepagina {
     display: flex;
-    justify-content: center;
+    flex-direction: none;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: none;
+    gap: none;
   }
   .pieDepagina div {
     width: 100%;
@@ -1010,6 +1050,220 @@ footer p {
   .pieDepagina div p {
     font-size: small;
   }
+}
+@media (min-width: 769px) and (max-width: 950px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .galeria p {
+    width: 42.5rem;
+  }
+  .galeria h3 {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .galeria div {
+    width: 43.75rem;
+  }
+  .galeria div img {
+    padding-top: 10px;
+    height: 12.5rem;
+    width: 18.75rem;
+    object-fit: cover;
+  }
+}
+@media (min-width: 625px) and (max-width: 768px) {
+  .introduccion {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .introduccion div {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 1.25rem;
+    width: auto;
+    background-color: black;
+    border-radius: 80px;
+  }
+  .introduccion div:hover {
+    transform: scale(1.1);
+    background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
+    transition: all 1500ms cubic-bezier(0.19, 0.57, 0.66, 0.8);
+  }
+  .introduccion div p {
+    text-align: center;
+    width: auto;
+    height: 5rem;
+    text-indent: 0.625rem;
+  }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .galeria p {
+    width: 37.5rem;
+  }
+  .galeria h3 {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .galeria div {
+    width: 39.0625rem;
+  }
+  .galeria div img {
+    padding-top: 10px;
+    height: 12.5rem;
+    width: 18.75rem;
+    object-fit: cover;
+  }
+}
+@media (min-width: 525px) and (max-width: 624px) {
+  .introduccion div {
+    width: auto;
+    height: auto;
+  }
+  .introduccion div p {
+    width: auto;
+    height: auto;
+  }
+  .galeria p {
+    width: 25rem;
+  }
+  div {
+    width: 21.875rem;
+  }
+}
+@media (min-width: 420px) and (max-width: 524px) {
+  .introduccion {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .introduccion div {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 1.25rem;
+    width: 25rem;
+    height: auto;
+    background-color: black;
+    border-radius: 80px;
+  }
+  .introduccion div:hover {
+    transform: scale(1.1);
+    background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
+    transition: all 1500ms cubic-bezier(0.19, 0.57, 0.66, 0.8);
+  }
+  .introduccion div p {
+    text-align: center;
+    width: 25rem;
+    height: auto;
+    text-indent: 0.625rem;
+  }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .galeria p {
+    width: 25rem;
+  }
+  .galeria h3 {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .galeria div {
+    width: auto;
+  }
+  .galeria div img {
+    padding-top: 10px;
+    height: 12.5rem;
+    width: 18.75rem;
+    object-fit: cover;
+  }
+}
+@media (min-width: 320px) and (max-width: 419px) {
+  .introduccion div {
+    width: 15.625rem;
+    height: 18.75rem;
+  }
+  .introduccion p {
+    text-align: center;
+    width: 15.625rem;
+    height: 12.5rem;
+    text-indent: 0.625rem;
+  }
+}
+.galeria {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.galeria p {
+  width: 15.625rem;
+}
+.galeria h3 {
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.galeria div {
+  width: auto;
+}
+.galeria div img {
+  padding-top: 10px;
+  height: 12.5rem;
+  width: 18.75rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
