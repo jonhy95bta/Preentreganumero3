@@ -143,56 +143,31 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: "Kanit", sans-serif;
+}
+
+form {
   padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.formulario1 form {
-  padding: 1.875rem 1.875rem;
-  box-shadow: 0 0 20px rgba(17, 17, 17, 0.2);
-  border-radius: 20px;
-  text-align: center;
-  width: 25rem;
-}
-.formulario1 h3 {
-  color: black;
-  font-weight: 600;
-  font-size: 2.1875rem;
-}
-.formulario1 label {
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.625rem;
-}
-.formulario1 input, .formulario1 textarea {
-  padding: 0.625rem 0.625rem;
-  border-radius: 1.875rem;
-  margin-bottom: 0.625rem;
-  background-color: #E57A7A;
-  border: 2px solid to right, #f0716a, #750904;
-  color: black;
-  outline: none;
-}
-.formulario1 input::placeholder, .formulario1 textarea::placeholder {
-  color: rgb(33, 29, 29);
-}
-.formulario1 .formula {
+
+.formula {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0.625rem;
 }
-.formulario1 .boton {
-  font-size: 1rem;
-  color: rgb(2, 2, 2);
-  border: 0;
-  border-radius: 1.5625rem;
-  background-color: white;
-  box-shadow: 0 0 20 px #bf2471;
-  cursor: pointer;
+
+.texto {
+  width: 25rem;
+  height: 25rem;
 }
-.formulario1 .boton:hover {
+
+.cuadroForm {
+  width: 37.5rem;
+  height: 37.5rem;
   background-color: #E57A7A;
+  border-color: #E57A7A;
 }
 
 .galeria {
@@ -1155,4 +1130,4 @@ footer p {
   object-fit: cover;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css~.map */

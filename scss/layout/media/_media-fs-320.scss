@@ -14,35 +14,6 @@
         font-size: x-large;
         }
     
-        .NavFirst ul {
-            @include flex (none, wrap,center,none,none);
-            padding-right: 0px;
-            padding-top: 40px;
-            font-weight: bold;
-            font-size: 1.25rem;
-            list-style: none;
-                    }
-        .NavFirst ul li {
-            text-align: center;
-                    }
-    
-          /* Main */
-      /* Barra nav secundaria de pages */
-    
-        .navSecond ul {
-    
-        background-color:$color-nav;
-        @include flex (column, wrap,none,none,none);
-
-        font-size: .9375rem;
-        padding: 1rem 0rem 1rem 0rem;
-    }
-        .navSecond ul li {
-    
-    text-align: center;
-    
-            }  
-    
             /* Footer */
     
         .pieDepagina{

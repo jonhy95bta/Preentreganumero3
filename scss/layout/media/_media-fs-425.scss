@@ -5,20 +5,6 @@
 
 @media (max-width:425px) {
 
-    /* Header */
-    
-    .NavFirst ul {
-        @include flex (column, none,none,none,.625rem);
-    
-        padding-right: 0px;
-        font-size: .9375rem;
-
-    
-    }
-    .NavFirst ul li {
-        text-align: center;
-    }
-    
     
         /* Main */
     

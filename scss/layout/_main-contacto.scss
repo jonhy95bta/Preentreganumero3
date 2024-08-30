@@ -1,28 +1,72 @@
-.Formulario1 {
-    display: flex;
-    justify-content: center;
-    padding: 1.25rem;
+.formulario1 {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+font-family:  $fuente-p;
+padding: 50px 55px;
+
+form {
+    padding: 1.875rem 1.875rem;
+    box-shadow: 0 0 20px rgba(17, 17, 17, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 25rem;
+
+}
+
+h3 {
+    color: black;
+    font-weight: 600;
+    font-size: 2.1875rem;
+}
+
+label{
+    color:  $color-p-main;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .625rem;
+}
+
+input, textarea {
+    padding: .625rem .625rem;
+    border-radius: 1.875rem;
+    margin-bottom: .625rem;
+    background-color: #E57A7A;
+    border: 2px solid $color-degradado;
+    color: $color-p-foter;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+
+    color: rgb(33, 29, 29);
+
 }
 .formula {
+
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    text-align: left;
     padding: .625rem;
 
 }
 
-.texto {
 
-    width: 25rem;
-    height: 25rem;
+.boton {
+
+font-size: 1rem ;
+color: rgb(2, 2, 2);
+border: 0;
+border-radius: 1.5625rem;
+background-color: white;
+box-shadow: 0 0 20 px rgba($color: #bf2471, $alpha: 1.0);
+cursor: pointer;
 }
 
-.cuadroForm {
-
-    width: 37.5rem;
-    height: 37.5rem ;
+.boton:hover {
     background-color: #E57A7A;
-    border-color: #E57A7A;
-    
 }
+
+}
+
