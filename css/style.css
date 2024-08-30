@@ -18,9 +18,6 @@
 h1 {
   font-family: "Anton SC", sans-serif;
   text-shadow: 5px 5px 10px gray;
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
 }
 
 p {
@@ -68,33 +65,22 @@ p {
 
 /*Layout*/
 header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: none;
   background-image: url(../assets/img/Head.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 18.75rem;
+  height: 25rem;
 }
 
-.NavFirst {
-  width: auto;
-}
-.NavFirst ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 20px;
-  padding-top: 20px;
-  justify-content: right;
-  font-weight: bold;
-  font-size: 1.25rem;
-  gap: 1.25rem;
-}
-.NavFirst ul li {
-  list-style: none;
-}
-.NavFirst ul li a {
-  color: black;
-  text-decoration: none;
+.colorf {
+  background-color: rgb(111, 106, 106);
 }
 
 body {
@@ -384,12 +370,7 @@ footer p {
   font-weight: bold;
   border-radius: 10px 10px 10px 10px;
   background-color: #a3231c;
-}
-
-.imgcarrusel {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+  padding-left: 0.625rem;
 }
 
 .bs-main {
