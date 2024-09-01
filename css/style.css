@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: none;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: none;
   gap: none;
 }
