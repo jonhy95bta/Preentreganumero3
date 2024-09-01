@@ -1,15 +1,18 @@
 body {
     background-color: $color-main;
+    height: auto;
 }
 
 .vistaPrevia {
     @include flex (none, wrap,space-evenly,none,none);
 
-    height: 12.5rem;
+    height: auto;
 
     div {
+        @include flex (none, wrap,center,none,none);
         margin: .625rem;
         height: 100%;
+        
     }
 
 }

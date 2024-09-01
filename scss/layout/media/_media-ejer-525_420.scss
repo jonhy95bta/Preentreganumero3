@@ -1,34 +1,4 @@
-@media (min-width:420px) and (max-width:524px) {
-    .introduccion {
-        @include flex (none, wrap,center,center,none);
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        width: 100%;
-    
-        div {
-            @include flex (none, wrap,center,center,none);
-            margin-top: 1.25rem;
-            width: 25rem;
-            height: auto;
-            background-color:black ;
-            border-radius: 80px;
-            &:hover {
-                transform:scale(1.1);
-                background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
-                transition: all 1500ms  $curva-bezier;
-            }
-            p {
-                text-align: center;
-                width: 25rem;
-                height: auto;
-                text-indent: .625rem
-                
-            }    
-        } 
-        
-        }
+@media (min-width:420px) and (max-width:525px) {
     .galeria {
         @include flex (column,wrap,center,center,3.125rem);
 
@@ -57,5 +27,5 @@
             }
     }
 
-}
+ }
 

@@ -2,37 +2,8 @@
 
 @media (min-width:625px) and (max-width:768px) {
 
-    
-.introduccion {
-    @include flex (none, wrap,center,center,none);
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 
 
-    div {
-        @include flex (none, wrap,center,center,none);
-        margin-top: 1.25rem;
-        width: auto;
-        background-color:black ;
-        border-radius: 80px;
-        &:hover {
-            transform:scale(1.1);
-            background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
-            transition: all 1500ms  $curva-bezier;
-        }
-
-
-    p {
-        text-align: center;
-        width: auto;
-        height: 5rem;
-        text-indent: .625rem
-        
-    }
-}
-}
 
     .galeria {
         @include flex (column,wrap,center,center,3.125rem);
@@ -59,8 +30,9 @@
             }
             }
     }
+     }
 
-}
+
 
 
 

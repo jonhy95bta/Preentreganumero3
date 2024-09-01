@@ -10,10 +10,11 @@
 
     div {
         @include flex (none, wrap,center,center,none);
-        margin-top: 1.25rem;
-        width: 50rem;
+        padding: 1rem 1rem;
+        width: 90%;
         background-color:black ;
         border-radius: 80px;
+        height:auto ;
         &:hover {
             transform:scale(1.1);
             background-image: radial-gradient(circle, #000000, #1f080d, #320c13, #470a14, #5b0811, #6d1216, #801c1a, #93271e, #aa3a30, #c14c43, #d85e56, #f0716a);
@@ -23,10 +24,10 @@
 
     p {
         text-align: center;
-        width: 43.75rem;
-        height: 5rem;
-        text-indent: .625rem
-        
+        width: 70%;
+        height: auto;
+        text-indent: .625rem;
+        margin: 0;
     }
 }
 }

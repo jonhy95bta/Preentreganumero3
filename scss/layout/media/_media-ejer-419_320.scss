@@ -1,24 +1,4 @@
-@media (min-width:320px) and (max-width:419px) {
-
-
-    .introduccion {
-
-        div {
-
-            width: 15.625rem;
-            height: 18.75rem;
-
-            }
-            p {
-                text-align: center;
-                width: 15.625rem;
-                height: 12.5rem;
-                text-indent: .625rem
-                
-            }    
-        } 
-        
-        }
+@media (min-width:320px) and (max-width:419px) { 
 
     .galeria {
         @include flex (column,wrap,center,center,3.125rem);
@@ -48,6 +28,6 @@
             }
     }
 
-
+}
 
 
